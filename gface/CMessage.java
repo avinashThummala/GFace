@@ -1,7 +1,7 @@
 package gface;
 
 //A JPanel which displays a single message in a conversation
-//It has the sender'd profile image along with the sent text
+//It has the sender's profile image along with the sent text
 
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
