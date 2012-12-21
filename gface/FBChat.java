@@ -8,6 +8,8 @@ import org.jivesoftware.smack.provider.ProviderManager;
 import org.jivesoftware.smackx.packet.VCard;
 import org.jivesoftware.smackx.provider.VCardProvider;
 
+//The main file
+
 public class FBChat {
     
     public static final String FB_XMPP_HOST = "chat.facebook.com";
@@ -16,12 +18,12 @@ public class FBChat {
     private ConnectionConfiguration config;
     private XMPPConnection connection;
     FBMessageListener fbml;        
-    private VCard vCard;
+    private VCard vCard; //Used for obtaining Profile images of friends
     
     ErrorFrame eFrame;
     BidiMap friends = new DualHashBidiMap();
     BidiMap chatWindows = new DualHashBidiMap();    
-    FriendsPanel fPanel;
+    FriendsPanel fPanel; //Used for displaying all friends in ChatFrame
     ChatFrame cFrame;
     
     ChatUserEntry user;
